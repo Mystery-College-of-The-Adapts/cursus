@@ -8,7 +8,12 @@ print 'Line Count:', count
 
 # Save the read whole file in a string
 
-for line in iter(fhand):
+a = open('loremIpsum.txt')
+for line in iter(a):
 	print line 
 
-fhand.close()
+print "Searching Through a File:"
+f = open('loremIpsum.txt')
+for line in f:
+	if line.startswith('L'):
+		print line 
