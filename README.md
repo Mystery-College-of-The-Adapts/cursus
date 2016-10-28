@@ -67,9 +67,9 @@ Digital Design and Computer Architecture, 2nd Edition
 
 
 - [ ] 6. Architecture
-  - [ ] 6.1 Introduction
-  - [ ] 6.2 Assembly Language
-  - [ ] 6.3 Machine Language
+  - [x] 6.1 Introduction
+  - [x] 6.2 Assembly Language
+  - [X] 6.3 Machine Language
   - [ ] 6.4 Programming
   - [ ] 6.5 Addressing Modes
   - [ ] 6.6 Lights, Camera, Action: Compiling, Assembling, and Loading
