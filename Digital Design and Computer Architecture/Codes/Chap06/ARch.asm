@@ -32,3 +32,12 @@ sw $s3, 4($0)       # write $s3 to data word 1
 sw $s4, 0x20($0)    # write $s4 to data word 8
 sw $s5, 400($0)     # write $s5 to data word 100
 
+
+
+# Immediate Operands
+
+# $s0 = a, $s1 = b
+addi	$s0, $s0, 4		# a = a + 4
+addi    $s1, $s0, - 12  # b = a - 12
+
+
