@@ -107,6 +107,16 @@ average access time = (hit rate x access time for that level) + ( 1 - hit rate) 
 **hit rate** = 96.2%
 
 
+______________________________________________________________________________________________
 
+## Inclusion
+
+**1. Explain why maintaining inclusion between different levels of the memory hierarchy makes implementing write-back memory hierarchies easier**
+
+*Solution*
+
+- Maintaining inclusion between levels in the memory hierarchy (ensuring that all data in a level is also contained in all of the levels below it) makes it easier to implement write-back memory hierarchies because it guarantees that, when a block of data is removed from a level of the hierarchy, there is space on the next lower level to write data if it has been modified.
+
+- If the levels of a hierarchy did not maintain inclusion, then there might not be space in the next lower level to write the block, requiring that a block be removed from that level to make space, which would make removing blocks more complicated.
 
 
