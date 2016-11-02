@@ -49,3 +49,16 @@ to overlap execution(assume no execution overhead)?*
 *The Latency of 20 ns and precharge time of 5 ns combine to allow a new memory reference to be started every 25 ns.*
 
 *Throughput = 1 / 25 ns = 4 x 10 ^ 7 operations/s *
+
+
+## Memory Hierarchies
+
+- The primary reason that memory systems are constructed as Hierarchies is that the cost per bit of a memory technology is generally proportional to the speed of the technology.
+- Fast memories, such as static RAMs(SRAM) tend to have a high cost per bit (in both dollars and chip area).
+- Slower technologies, such as dynamic RAM(DRAM) are less expensive, making it practical to construct larger memories using these technologies.
+
+**Why are computers' memory systems typically built as Hierarchies?**
+- The faster a memory technology is, the more it tends to cost per bit of storage. 
+- Using a memory hierarchy allows the computer to provide a large memory capacity, fast average access time, and low memory cost.
+- The lower levels of the memory hierarchy, which contain the most storage, are implemented using slow but cheap memory technologies.
+- The higher levels, 
