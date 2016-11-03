@@ -138,3 +138,24 @@ ________________________________________________________________________________
 - Because 55, 000 memory references (all the references that miss in the cache) reach the main memory, its hit rate is 45,000/55,000 = 81.8 %
 - Its miss rate = 10,000/55,000 = 18.2%
                
+___________________________________________________________________________________________________________________
+
+## SRAM vs DRAM
+
+**1. Why do DRAMs generally have much larger capacities than SRAMs constructed in the same fabrication technology?**
+
+*Solution*
+- DRAM bit cells require only two devices - a capacitor and a transistor - while SRAM bit cells typically require six transistors. This makes the bit cells of the DRAM much smaller than the bit cells of the SRAM, allowing the DRAM  to store more data in the same amount of chip space. 
+
+**2. For each of the following cases, state whether SRAMs or DRAMs would be more appropriate building blocks for the memory system, and explain why. Assume that there is only one level in the memory hierarchy.**
+- **A memory system where performance was the most important goal**
+- **A memory system where cost was the most important factor**
+- **A design where it is important for data to be stored for long periods of time without any action on the processor's part**
+
+*Solution*
+
+- SRAMs generally have lower latencies than DRAMs, so SRAMs would be a better choice for this system
+- DRAMs have lower cost/bit than SRAMs, so they would be better here.
+- DRAMs have to have their contents refreshed in order to store data for extended periods without processor intervention, SRAMs would be better than DRAMs.
+
+__________________________________________________________________________________________________________________
