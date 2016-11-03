@@ -120,3 +120,21 @@ ________________________________________________________________________________
 - If the levels of a hierarchy did not maintain inclusion, then there might not be space in the next lower level to write the block, requiring that a block be removed from that level to make space, which would make removing blocks more complicated.
 
 
+_____________________________________________________________________________________________________________
+
+## Hit and Miss Rates
+
+**1. Given a memory hierarchy in the following order: Processor -> Cache -> Main Memory -> Virtual Memory**
+
+**what are the hit and miss rates in the cache and the main memory if the processor executes a total of 1,000,000 memory references, 945,000 of which hit in the cache and 45,000 of which hit in the main memory**
+
+*Solution*
+
+- Hit rate = # of hits / # of references that reach that level
+- Miss rate = # of misses / # of references that reach that level 
+- All 1,000,000 memory reach the cache, so the hit rate in the cache = 945,000 / 1,000, 000 = 94.5%
+- The miss rate = 55,000 / 1,000,000 = 5.5 %
+
+- Because 55, 000 memory references (all the references that miss in the cache) reach the main memory, its hit rate is 45,000/55,000 = 81.8 %
+- Its miss rate = 10,000/55,000 = 18.2%
+               
